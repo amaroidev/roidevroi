@@ -3,6 +3,13 @@
    Zero Three.js. Zero custom cursor. Lean and fast.
    ============================================================ */
 
+/* ── SCROLL PROGRESS ─────────────────────────────────────── */
+const scrollProg = document.getElementById('scroll-prog');
+window.addEventListener('scroll', () => {
+  const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  if (scrollProg) scrollProg.style.width = pct + '%';
+}, { passive: true });
+
 /* ── NAV scroll ───────────────────────────────────────────── */
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
