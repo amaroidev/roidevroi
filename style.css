@@ -1,3 +1,13 @@
+/* ============================================================
+   ROI — Technical Creative  |  style.css
+   Mobile-first. No gradients. No Three.js.
+   Hero: dark  |  About: dark  |  Work: cream  |  Contact: dark
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+::-webkit-scrollbar { display: none; }
+html { -ms-overflow-style: none; scrollbar-width: none; scroll-behavior: smooth; }
+
 /* ── SCROLL PROGRESS BAR ────────────────────────────────────── */
 #scroll-prog {
   position: fixed; top: 0; left: 0; z-index: 999;
@@ -252,6 +262,13 @@ ul  { list-style: none; }
 .hc-num  { color: #7B9E6B; }
 .hc-key  { color: rgba(234,229,223,0.4); }
 .hc-cmt  { color: rgba(234,229,223,0.25); font-style: italic; }
+
+.hc-cursor {
+  display: inline-block; width: 7px; height: 1.1em;
+  background: rgba(234,229,223,0.55); vertical-align: middle;
+  margin-left: 3px; animation: hc-blink 1s step-end infinite;
+}
+@keyframes hc-blink { 50% { opacity: 0; } }
 
 /* Ticker */
 .hero-ticker { position: relative; z-index: 2; overflow: hidden; border-top: 1px solid var(--rule); }

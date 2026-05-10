@@ -85,3 +85,23 @@ document.querySelectorAll('.proj-screen').forEach(el => {
     el.style.transform  = 'perspective(900px) rotateX(0deg) rotateY(0deg)';
   });
 });
+
+/* ── COPY EMAIL ───────────────────────────────────────────── */
+const copyEmailBtn = document.querySelector('.copy-email');
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const email = copyEmailBtn.getAttribute('data-email');
+    const textSpan = copyEmailBtn.querySelector('.cl-email-text');
+    const originalText = textSpan.innerText;
+    
+    navigator.clipboard.writeText(email).then(() => {
+      textSpan.innerText = 'Copied to clipboard!';
+      textSpan.style.color = 'var(--cc)';
+      setTimeout(() => {
+        textSpan.innerText = originalText;
+        textSpan.style.color = '';
+      }, 2000);
+    });
+  });
+}
