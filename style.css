@@ -64,14 +64,14 @@ html { -ms-overflow-style: none; scrollbar-width: none; scroll-behavior: smooth;
 :root {
   --bg:      #0C0B0A;
   --ink:     #EAE5DF;
-  --muted:   #6B5E52;
-  --copper:  #A0714F;
+  --muted:   #A3988D;
+  --copper:  #BA8A66;
   --rule:    #242120;
 
   --cream:   #F0EBE1;
   --cream-2: #E4DDD3;
   --ink-l:   #1A1614;
-  --muted-l: #6B5E52;
+  --muted-l: #3B332D;
   --rule-l:  #D4CCC3;
 
   --fh: 'Archivo', sans-serif;
@@ -446,8 +446,8 @@ ul  { list-style: none; }
 /* Stack tags */
 .proj-stack { display: flex; flex-wrap: wrap; gap: 6px; }
 .proj-stack span {
-  font-size: 0.68rem; font-weight: 600; color: var(--muted-l);
-  border: 1px solid var(--rule-l); padding: 4px 11px; border-radius: 100px;
+  font-size: 0.68rem; font-weight: 700; color: var(--ink-l);
+  border: 1px solid color-mix(in srgb, var(--rule-l) 80%, black); padding: 4px 11px; border-radius: 100px;
 }
 
 /* Visual / screenshot */
