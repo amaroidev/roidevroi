@@ -279,13 +279,8 @@ ul  { list-style: none; }
   animation: ticker 28s linear infinite;
 }
 .ticker-track .bull { color: rgba(160,113,79,0.4); }
-/* Each label a distinct color, repeating every 12 spans (6 items + 6 bulls) */
-.ticker-track span:nth-child(12n+1)  { color: #3DA9A0; }
-.ticker-track span:nth-child(12n+3)  { color: #C98A40; }
-.ticker-track span:nth-child(12n+5)  { color: #7B9E6B; }
-.ticker-track span:nth-child(12n+7)  { color: #A87CBF; }
-.ticker-track span:nth-child(12n+9)  { color: #E07B6A; }
-.ticker-track span:nth-child(12n+11) { color: #5B8FB5; }
+/* Moving fields one color */
+.ticker-track span:not(.bull) { color: var(--muted); }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* ── ABOUT ─────────────────────────────────────────────────── */
