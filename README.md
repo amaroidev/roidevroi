@@ -1,18 +1,19 @@
 # roidevroi
 
-![HTML5](https://img.shields.io/badge/HTML5-333333?style=flat&logo=github) ![CSS3](https://img.shields.io/badge/CSS3-333333?style=flat&logo=github) ![JavaScript](https://img.shields.io/badge/JavaScript-333333?style=flat&logo=github) ![Webpack](https://img.shields.io/badge/Webpack-333333?style=flat&logo=github) ![Vite](https://img.shields.io/badge/Vite-333333?style=flat&logo=github)
+![HTML5](https://img.shields.io/badge/HTML5-333333?style=flat&logo=github) ![CSS3](https://img.shields.io/badge/CSS3-333333?style=flat&logo=github) ![JavaScript](https://img.shields.io/badge/JavaScript-333333?style=flat&logo=github) ![UI Design](https://img.shields.io/badge/UI_Design-333333?style=flat&logo=github) ![Alternative Layouts](https://img.shields.io/badge/Alternative_Layouts-333333?style=flat&logo=github) ![Developer Portfolio](https://img.shields.io/badge/Developer_Portfolio-333333?style=flat&logo=github)
 
 ## Overview
 
-roidevroi is a personal sandbox playground dedicated to web engineering experiments, CSS layouts, and micro-frontend components.
+roidevroi is an alternative design iteration of my personal portfolio website. It features custom web components, alternative grid structures, and stylistic variations designed to experiment with user interfaces.
 
 ---
 
 ## Key Features
 
-- **Experimental layout rendering tests**
-- **Custom web components showcase**
-- **Playground structure for DOM script optimization**
+- **Modern visual layout and custom design components**
+- **Stylistic experimentation with alternative navigation architectures**
+- **Fully responsive client-side interface and projects display**
+- **Lightweight code architecture optimized for page speed**
 
 ---
 
@@ -21,8 +22,9 @@ roidevroi is a personal sandbox playground dedicated to web engineering experime
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Webpack**
-- **Vite**
+- **UI Design**
+- **Alternative Layouts**
+- **Developer Portfolio**
 
 ---
 
@@ -30,9 +32,7 @@ roidevroi is a personal sandbox playground dedicated to web engineering experime
 
 ### Prerequisites
 
-Ensure you have the required runtimes installed:
-- Git
-- Appropriate package manager (npm/yarn or pip depending on stack)
+You only need a modern web browser to run this project.
 
 ### Setup Instructions
 
@@ -42,35 +42,12 @@ Ensure you have the required runtimes installed:
    cd roidevroi
    ```
 
-2. **Install Dependencies**
-   *For Node/Next.js/React Native projects:*
+2. **Open the Project**
+   Simply open the `index.html` file in any modern web browser or serve it locally using a light dev server (like Live Server or python's http module):
    ```bash
-   npm install
+   python -m http.server 8000
    ```
-   *For Python projects:*
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Configure Environment**
-   Duplicate the env file (if present) and populate variables:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. **Launch Application**
-   *For React/Next.js:*
-   ```bash
-   npm run dev
-   ```
-   *For Expo/React Native:*
-   ```bash
-   npx expo start
-   ```
-   *For Python/Flask:*
-   ```bash
-   python app.py
-   ```
+   Then navigate to `http://localhost:8000`.
 
 ---
 
